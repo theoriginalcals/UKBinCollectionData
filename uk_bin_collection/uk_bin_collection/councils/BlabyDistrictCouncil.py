@@ -20,7 +20,7 @@ class CouncilClass(AbstractGetBinDataClass):
         bindata = {"bins": []}
 
         URI = f"https://my.blaby.gov.uk/set-location.php?ref={user_uprn}&redirect=collections"
-
+        "User-Agent": "Mozilla/5.0 (Linux; Android 8.0; Pixel 2 Build/OPD3.170816.012) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.7968.1811 Mobile Safari/537.36"}
         # Make the GET request
         response = requests.get(URI)
 
